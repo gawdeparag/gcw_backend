@@ -2,7 +2,6 @@ from django.db import models
 
 # Create your models here.
 class Order(models.Model):
-    order_id = models.IntegerField(auto_created=True, unique=True, null=False)  
     car_name = models.CharField(max_length=100, null=False)  
     car_brand = models.CharField(max_length=100, null=False) 
     car_model = models.CharField(max_length=100)

@@ -5,7 +5,6 @@ class OrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order
         fields = [
-            'order_id', 
             'car_name', 
             'car_brand', 
             'car_model', 
@@ -18,5 +17,5 @@ class OrderSerializer(serializers.ModelSerializer):
             'created_at',
             'updated_at',
             'assigned_to',
-            'booked_for_date'
+            'booked_for_date',
             ]
